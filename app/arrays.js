@@ -93,15 +93,6 @@ exports.arraysAnswers = {
 
   duplicates : function(arr) {
 
-    // var sorted_arr = arr.sort();
-    //
-    // var results = [];
-    // for (var i = 0; i < arr.length + 1; i++) {
-    //     if (sorted_arr[i + 1] === sorted_arr[i]) {
-    //         results.push(sorted_arr[i]);
-    //     }
-    // }
-    // return results;
     var results = [];
     for (var i = 0, len = arr.length - 1; i < len; i++) {
       if((results.indexOf(arr[i]) === -1) && (arr.indexOf(arr[i], i + 1) != -1)) {
